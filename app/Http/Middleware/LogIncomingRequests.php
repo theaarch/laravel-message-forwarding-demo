@@ -27,7 +27,6 @@ class LogIncomingRequests
                 'user_agent' => $request->userAgent(),
             ],
             'response' => [
-                'payload' => $response->getContent(),
                 'status' => $response->getStatusCode(),
             ],
         ]);

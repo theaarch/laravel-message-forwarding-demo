@@ -5788,12 +5788,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/theaarch/laravel-sms-forwarder.git",
-                "reference": "258b473e5dd8f9197c179af403818bd414eb0428"
+                "reference": "f7dd577e3f49ef54cb9df0f219760749647e49f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theaarch/laravel-sms-forwarder/zipball/258b473e5dd8f9197c179af403818bd414eb0428",
-                "reference": "258b473e5dd8f9197c179af403818bd414eb0428",
+                "url": "https://api.github.com/repos/theaarch/laravel-sms-forwarder/zipball/f7dd577e3f49ef54cb9df0f219760749647e49f6",
+                "reference": "f7dd577e3f49ef54cb9df0f219760749647e49f6",
                 "shasum": ""
             },
             "require": {
@@ -5840,7 +5840,7 @@
                 "issues": "https://github.com/theaarch/laravel-sms-forwarder/issues",
                 "source": "https://github.com/theaarch/laravel-sms-forwarder/tree/main"
             },
-            "time": "2026-01-02T07:55:39+00:00"
+            "time": "2026-01-02T09:16:47+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
