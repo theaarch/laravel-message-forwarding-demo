@@ -14,7 +14,11 @@ class ForwardedNotificationController extends Controller
     public function index(Request $request)
     {
         return Inertia::render('forwarded/notifications/page', [
-            'notifications' => ForwardedNotification::all(),
+            'notifications' => ForwardedNotification::query()
+                ->orderBy('created_at', 'desc')
+                ->paginate(
+                    $request->get('per_page', 10),
+                ),
         ]);
     }
 
