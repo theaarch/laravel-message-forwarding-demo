@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ForwardedNotificationController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Laravel\Fortify\Features;
@@ -16,7 +16,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('dashboard');
     })->name('dashboard');
 
-    Route::resource('messages', MessageController::class);
+    Route::resource('forwarded/notifications', ForwardedNotificationController::class);
 });
 
 require __DIR__.'/settings.php';

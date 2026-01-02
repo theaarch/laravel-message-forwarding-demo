@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Message;
+use App\Models\ForwardedNotification;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class MessageController extends Controller
+class ForwardedNotificationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request)
     {
-        return Inertia::render('messages/page', [
-            'messages' => Message::all(),
+        return Inertia::render('forwarded/notifications/page', [
+            'notifications' => ForwardedNotification::all(),
         ]);
     }
 

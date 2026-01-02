@@ -24,8 +24,8 @@ const mainNavItems: NavItem[] = [
     },
 
     {
-        title: 'Messages',
-        href: '/messages',
+        title: 'Forwarded Notifications',
+        href: '/forwarded/notifications',
         icon: LayoutGrid,
     },
 ];
