@@ -6,7 +6,7 @@ return [
 
     'prefix' => env('SMS_FORWARDER_PREFIX', 'sms-forwarder'),
 
-    'middleware' => [\App\Http\Middleware\LogIncomingRequests::class],
+    'middleware' => null,
 
     'webhook' => [
         'secret' => env('SMS_FORWARDER_WEBHOOK_SECRET'),
