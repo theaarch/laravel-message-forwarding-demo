@@ -2,8 +2,8 @@
 
 namespace App\Actions\SmsForwarder;
 
+use App\Models\ForwardedNotification;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 use Theaarch\SmsForwarder\Contracts\HandlesWebhooks;
 
@@ -17,9 +17,12 @@ class HandleWebhook implements HandlesWebhooks
      */
     public function handle(Request $request): Response
     {
-        Log::info('SmsForwarder Webhook', $request->all());
+        $validated = $request->validate([
+            'from' => ['required', 'string'],
+            'content' => ['required', 'string'],
+        ]);
 
-        // Your logic here...
+        ForwardedNotification::query()->create($validated);
 
         return new Response('Webhook Handled', Response::HTTP_OK);
     }
