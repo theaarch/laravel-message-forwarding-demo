@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8078c81fbb23f3fc37578b2651f04cc5",
+    "content-hash": "69d580ab72d34546f81f5fb8c418e5e2",
     "packages": [
         {
             "name": "brick/math",
@@ -5783,6 +5783,66 @@
             "time": "2025-12-18T07:04:31+00:00"
         },
         {
+            "name": "theaarch64/laravel-sms-forwarder",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theaarch/laravel-sms-forwarder.git",
+                "reference": "258b473e5dd8f9197c179af403818bd414eb0428"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theaarch/laravel-sms-forwarder/zipball/258b473e5dd8f9197c179af403818bd414eb0428",
+                "reference": "258b473e5dd8f9197c179af403818bd414eb0428",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/contracts": "^11.0|^12.0",
+                "illuminate/events": "^11.0|^12.0",
+                "illuminate/http": "^11.0|^12.0",
+                "illuminate/routing": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.24",
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^10.6",
+                "pestphp/pest": "^4.0",
+                "pestphp/pest-plugin-laravel": "^4.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Theaarch\\SmsForwarder\\SmsForwarderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Theaarch\\SmsForwarder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel SMS Forwarder.",
+            "keywords": [
+                "forwarder",
+                "laravel",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/theaarch/laravel-sms-forwarder/issues",
+                "source": "https://github.com/theaarch/laravel-sms-forwarder/tree/main"
+            },
+            "time": "2026-01-02T07:55:39+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "v2.4.0",
             "source": {
@@ -9335,7 +9395,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "theaarch64/laravel-sms-forwarder": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
