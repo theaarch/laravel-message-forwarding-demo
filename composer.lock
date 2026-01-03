@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5a56dac03e1aa9024d10971b54b9227",
+    "content-hash": "5dfcb912f3606991a35e4a5c7a7ec528",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6315,17 +6315,17 @@
             "time": "2025-12-18T07:04:31+00:00"
         },
         {
-            "name": "theaarch64/laravel-sms-forwarder",
+            "name": "theaarch64/laravel-forwarder",
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/theaarch/laravel-sms-forwarder.git",
-                "reference": "3ebbc5715ebbcc730a3c6cd6543d68fc8cf281fe"
+                "url": "https://github.com/theaarch/laravel-forwarder.git",
+                "reference": "954f5a15970fb21676dfd90f81b3a4b6572e34cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theaarch/laravel-sms-forwarder/zipball/3ebbc5715ebbcc730a3c6cd6543d68fc8cf281fe",
-                "reference": "3ebbc5715ebbcc730a3c6cd6543d68fc8cf281fe",
+                "url": "https://api.github.com/repos/theaarch/laravel-forwarder/zipball/954f5a15970fb21676dfd90f81b3a4b6572e34cb",
+                "reference": "954f5a15970fb21676dfd90f81b3a4b6572e34cb",
                 "shasum": ""
             },
             "require": {
@@ -6349,30 +6349,30 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Theaarch\\SmsForwarder\\SmsForwarderServiceProvider"
+                        "Theaarch\\Forwarder\\ForwarderServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Theaarch\\SmsForwarder\\": "src/"
+                    "Theaarch\\Forwarder\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Laravel SMS Forwarder.",
+            "description": "Laravel Forwarder.",
             "keywords": [
                 "forwarder",
                 "laravel",
-                "sms"
+                "message"
             ],
             "support": {
-                "issues": "https://github.com/theaarch/laravel-sms-forwarder/issues",
-                "source": "https://github.com/theaarch/laravel-sms-forwarder/tree/main"
+                "issues": "https://github.com/theaarch/laravel-forwarder/issues",
+                "source": "https://github.com/theaarch/laravel-forwarder/tree/main"
             },
-            "time": "2026-01-02T11:35:34+00:00"
+            "time": "2026-01-03T07:50:30+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -9881,7 +9881,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "theaarch64/laravel-sms-forwarder": 20
+        "theaarch64/laravel-forwarder": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

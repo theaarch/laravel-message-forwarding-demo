@@ -27,7 +27,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions): void {
         // Rendering Exceptions as JSON
         $exceptions->shouldRenderJsonWhen(function (Request $request, Throwable $e) {
-            if ($request->is('sms-forwarder/webhook')) {
+            if ($request->is('forwarder/webhook')) {
                 return true;
             }
 

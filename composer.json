@@ -16,7 +16,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
         "laravel/wayfinder": "^0.1.9",
-        "theaarch64/laravel-sms-forwarder": "dev-main"
+        "theaarch64/laravel-forwarder": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Actions\SmsForwarder;
+namespace App\Actions\Forwarder;
 
 use App\Models\ForwardedNotification;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Theaarch\SmsForwarder\Contracts\HandlesWebhooks;
+use Theaarch\Forwarder\Contracts\HandlesWebhooks;
 
 class HandleWebhook implements HandlesWebhooks
 {
