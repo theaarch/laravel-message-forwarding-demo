@@ -26,6 +26,13 @@ class ForwardedNotification extends Model
         'content',
     ];
 
+    protected function casts(): array
+    {
+        return [
+            'content' => 'encrypted',
+        ];
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
