@@ -26,7 +26,7 @@ class ForwardedNotificationController extends Controller
         }
 
         return Inertia::render('forwarded/notifications/page', [
-            'notifications' => $query->paginate($request->get('per_page', 10)),
+            'notifications' => $query->paginate($request->get('per_page')),
             'filters' => [
                 'search' => $search ?? '',
             ],
